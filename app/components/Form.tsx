@@ -30,7 +30,9 @@ const Form = () => {
 
   const getTodo = async () => {
     setLoading(true);
-    const req = await fetch("http://localhost:3000/api/todos");
+    const req = await fetch(BaseUrl, {
+      cache: "no-store",
+    });
     const res = await req.json();
     setTodos([...res]);
     setLoading(false);
