@@ -1,5 +1,5 @@
 "use client";
-const BaseUrl = "http://localhost:3000/api/todos/";
+const BaseUrl = "https://9-8-dars.vercel.app/api/todos/";
 
 import { useEffect, useRef, useState } from "react";
 import { ITodo } from "../api/todos/db";
